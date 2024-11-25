@@ -146,8 +146,8 @@ const reset = () => {
 
   return (
     <>
-    <div className="container  p-5 bg-light w-50 " 
-    style={{minHeight:'100vh'}}>
+    <div className="container  p-5 bg-light w-50" 
+    style={{minHeight:'100vh',minWidth:'300px'}}>
     <h2 className='text-center mt-2 mb-3'>Simple Interest Calculator</h2>
 {/* here */}
 <label className='me-3'><input type="radio" value='simpleInterest' checked={selectedtype=='simpleInterest'} onChange={e=>handleRadioChange(e)} /> Simple Interest </label>
@@ -203,7 +203,7 @@ const reset = () => {
     labelId="demo-simple-select-label"
     id="demo-simple-select"
     value={compoundingPeriod}
-    label="Age"
+    label="period"
     onChange={(e) => setCompoundingPeriod(e.target.value)}
   >
     <MenuItem value={'Yearly'}>Yearly</MenuItem>
